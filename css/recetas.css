@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+/*Logo arriba*/
+
+.brand img{
+  width: 220px;
+  height: 60px;
+  padding: 10px 15px;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    font-family: 'open sans';
+}
+
+header{
+    width: 100%;
+    max-width: 1850px;
+    margin: auto;
+}
+
+nav{
+    background: #774360;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav > ul > li {
+    float: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 15px 20px;
+}
+
+nav ul li a:hover {
+    background: #945779;
+}
+
+nav > ul > li:hover div{
+    display: table;
+    
+}
+
+
+/*Submenu*/
+nav ul li div {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box ;
+    display: none; /*esto hace aparecer y desaparecer el menu*/
+    
+}
+
+
+
+nav ul li div ul{
+    width: 20%;
+    display: table-cell; /*tamaño exacto a las otras categorias*/
+    border-right: 1px solid rgba(196, 195, 195, 0.568) ; /*divisiones*/
+    box-sizing: border-box;
+}
+
+nav ul li div ul:last-child{
+    border: none;
+}
+
+nav ul li div ul .titulo { /*titulo de las columnas*/
+    background: #945779;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav ul li {
+  font-size: 20px;
+}
+
+nav ul li div ul .titulo a{
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/*para poner colo en cada titulo, se cambia en html el nombre en las clase titulo*/
+.titulo.verde{background: #365936;}
+.titulo.morado{background: #8b6bbe;}
+.titulo.rosado{background: #d18ac8;}
+
+nav ul li div ul .titulo a:hover{ /*que no cambie de color al pasar mouse*/
+    background: none;
+}
+
+nav ul li div ul li a {
+    color: rgb(46, 46, 46)
+
+}
+
+nav ul li div ul li a:hover {
+    color: #ffffff;
+}
+
+/*Cuerpo*/
+.contenedor{
+  padding: 30px 0px ;
+    width: 100%;
+    max-width: 1700px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #945779;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Header*/
+.catalanaimg{ /*imagen principal catalana*/
+    width: 100%;
+    height: 620px;
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(33, 12%, 82%, 0.596), hsla(206, 26%, 25%, 0.650)), url(../img/RecetasProce/crema-catalana3.png);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(33, 12%, 82%, 0.596), hsla(206, 26%, 25%, 0.650)), url(../img/RecetasProce/crema-catalana3.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.atolelote{ /*imagen principal atol elote*/
+  width: 100%;
+  height: 620px;
+  background: #304352;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(33, 12%, 82%, 0.596), hsla(206, 26%, 25%, 0.650)), url(../img/RecetasProce/atol-de-elote2.png);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(33, 12%, 82%, 0.596), hsla(206, 26%, 25%, 0.650)), url(../img/RecetasProce/atol-de-elote2.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  
+
+}
+
+.tittle{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Titulo Principal*/
+.tittle h1{
+    font-size: 60px;
+    color: #fff;
+}
+
+.tittle h2{
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #774360;
+  }
+  footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  footer .content p,a{
+    color: #fff;
+  }
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+  
+  }
+  footer .content p{
+    text-align: justify;
+  }
+  footer .content .lower .topic{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i{
+    padding-right: 16px;
+  }
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+  footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #945779;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #ddbfcf;
+  }
+  footer .content .right input[type="submit"]{
+    height: 42px;
+    width: 100%;
+    font-size: 18px;
+    color: #774360;
+    background: #d9d9d9;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #ddbfcf;
+    transition: all 0.3s ease-in-out;
+  }
+  .content .right input[type="submit"]:hover{
+    background: none;
+    color:  #ddbfcf;
+  }
+  footer .content .media-icons a{
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #ddbfcf;
+    margin: 30px 5px 0 0;
+    transition: all 0.3s ease;
+  }
+  .content .media-icons a:hover{
+    border-color: #ddbfcf;
+  }
+  footer .bottom{
+    width: 100%;
+    text-align: right;
+    color: #d9d9d9;
+    padding: 0 40px 5px 0;
+  }
+  footer .bottom a{
+    color: #945779;
+  }
+  footer a{
+    transition: all 0.3s ease;
+  }
+  footer a:hover{
+    color: #ddbfcf;
+  }
+  @media (max-width:1100px) {
+    footer .content .middle{
+      padding-left: 50px;
+    }
+  }
+  @media (max-width:950px){
+    footer .content .box{
+      width: 50%;
+    }
+    .content .right{
+      margin-top: 40px;
+    }
+  }
+  @media (max-width:560px){
+    footer{
+      position: relative;
+    }
+    footer .content .box{
+      width: 100%;
+      margin-top: 30px;
+    }
+    footer .content .middle{
+      padding-left: 0;
+    }
+  }
+
+    /*Crema Catalana*/
+  .tittle-C-catalana{ /*imagen principal*/
+    width: 90%;
+    height: 1000px;
+    background: url(../img/Crema-Catalana.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.tittle-C-catalana{
+  display: flex;
+  height: 600px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*Titulo Principal*/
+.tittle-C-catalana h1{
+    font-size: 60px;
+    color: #fff;
+}
+
+.tittle-C-catalana h2{
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+  
+/*Main crema*/
+
+/*cambio en los detaller - revisar*/
+.contenedor-detalles{
+  width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+	grid-gap: 18px;
+  justify-content: center;
+	flex-direction: column;
+  padding: 16px 16px;
+  border-bottom: 1px solid rgba(196, 195, 195, 0.568) ; /*divisiones*/
+  border-top: 1px solid rgba(196, 195, 195, 0.568) ; /*divisiones*/
+}
+
+
+/*Bordes*/
+
+main section div ul{
+    display: table-cell; /*tamaño exacto a las otras categorias*/
+    
+    box-sizing: border-box;
+}
+
+.ingredientes h2{
+  font-size: 24px;
+}
+
+/*comienza nuevo */
+.contenedor-ingre-pro{
+	padding: 48px 0;
+}
+
+.containerPI{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+	grid-gap: 32px;
+}
+
+.ingredientes{
+  border-right: 1px solid rgba(196, 195, 195, 0.568) ;
+	padding: 16px 32px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+  
+}
+
+.proceso{
+	padding: 16px 32px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+  grid-column: span 3;
+}
+
+.vacio{
+  grid-column: span 0;
+}
+/*termina nuevo*/
+
+/*Listas*/
+
+ul,ol,dl,p {
+  font-size: 1.3rem;
+}
+
+li, p , ol{
+  line-height: 1.5;
+}
+
